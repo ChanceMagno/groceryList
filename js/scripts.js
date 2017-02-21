@@ -6,7 +6,6 @@ $(document).ready(function () {
     var groceryItem = $("#groceryItem").val();
 
     // now print out sorted array in list
-
     if (groceryItem === "") {
       alert("You forgot your groceries!")
     }
@@ -18,9 +17,8 @@ $(document).ready(function () {
         groceryItems.forEach( function (item) {
           $("#favoriteList").append("<li>"+item+"</li>");
         });
+        $("#groceries").trigger("reset");
     }
-
-
 
 
     // $("#groceries").trigger("reset");
