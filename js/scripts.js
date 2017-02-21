@@ -2,6 +2,10 @@
 var groceryItems = [];
 
 $(document).ready(function () {
+  $("#done").click(function(){
+    $(".col-md-8").toggle();
+  })
+
   $("#groceries").submit(function(event) {
     var groceryItem = $("#groceryItem").val();
 
